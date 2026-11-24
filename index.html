@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Packaging Showcase — Sarayut Rungsawang</title>
+<meta name="description" content="Food packaging prepress showcase: colour separation, K100 text overprint, half-line trapping and plate checks.">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body { background: #eceef0; font-size: 16px; line-height: 1.55; }
+  .bar { position: sticky; top: 0; z-index: 5; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; padding: 10px 16px; background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line); font-size: 14px; }
+  .bar a { padding: 6px 12px; border: 1px solid var(--ink); color: var(--ink); font-weight: 600; }
+  .bar a.primary { background: var(--ink); color: #fff; }
+  main { max-width: 980px; margin: 24px auto 48px; padding: 0 16px; }
+  .sheet { background: #fff; padding: 48px 56px; box-shadow: 0 2px 14px rgba(0,0,0,.07); }
+  .sheet + .sheet { margin-top: 24px; }
+  .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: 44px; font-weight: 700; letter-spacing: -.015em; }
+  .role { font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 6px; }
+  .lede { font-size: 18px; max-width: 62ch; margin-top: 22px; }
+  .callout { background: var(--soft); border-left: 3px solid var(--accent); padding: 14px 18px; margin-top: 26px; }
+  .callout b { color: var(--ink); }
+  h2.label { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 34px 0 10px; }
+  .checks { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 32px; }
+  .contact { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  .board .no { font-size: 12px; font-weight: 600; letter-spacing: .14em; color: var(--accent); text-transform: uppercase; }
+  .board h2 { font-size: 28px; font-weight: 700; margin-top: 4px; }
+  .board p { color: var(--text); margin-top: 6px; max-width: 70ch; }
+  .board figure { margin-top: 20px; }
+  .board img { width: 100%; display: block; border: 1px solid var(--line); border-radius: 4px; }
+  .board .full { display: inline-block; margin-top: 10px; font-size: 14px; font-weight: 600; }
+  .note { font-size: 13px; color: var(--muted); margin-top: 22px; }
+  @media (max-width: 700px) {
+    .sheet { padding: 26px 18px; }
+    h1 { font-size: 32px; }
+    .checks { grid-template-columns: 1fr; }
+  }
+  @media print {
+    @page { size: A4; margin: 12mm 14mm; }
+    body { background: #fff; font-size: 10pt; }
+    .bar, .board .full { display: none; }
+    main { max-width: none; margin: 0; padding: 0; }
+    .sheet { box-shadow: none; padding: 0; }
+    .sheet + .sheet { margin-top: 0; break-before: page; }
+    h1 { font-size: 30pt; margin-top: 30mm; }
+    .board figure { margin-top: 5mm; text-align: center; }
+    .board img { width: auto; max-width: 100%; max-height: 225mm; margin: 0 auto; }
+    .board h2 { font-size: 18pt; }
+  }
+</style>
+</head>
+<body>
+<nav class="bar">
+  <a class="primary" href="Sarayut_Rungsawang_Food_Packaging_Showcase.pdf">Download showcase (PDF)</a>
+  <a href="Sarayut_Rungsawang_Resume_Food.pdf">Resume (PDF)</a>
+</nav>
+
+<main>
+  <section class="sheet">
+    <h1>Sarayut Rungsawang</h1>
+    <div class="role">Graphic Designer · Food Packaging · POSM &amp; Online</div>
+    <p class="lede">Four boards on confectionery packs. Each one shows a file or print decision I make before artwork goes to the printer, and where it sits on the pack.</p>
+    <div class="callout"><b>Example only.</b> These are retail packs already on sale (Thai version), used to explain the techniques. My production work is on the EU version of this packaging, so the real job files differ.</div>
+
+    <h2 class="label">What I check before a file goes to the printer</h2>
+    <ul class="checks">
+      <li>Text against the customer's copy, in Thai and English</li>
+      <li>Dimensions and dieline against the spec</li>
+      <li>Black text on K100 only; two-ink solids kept clean</li>
+      <li>Overprint and knockout settings on every object</li>
+      <li>Trap direction and width on hard colour edges</li>
+      <li>Barcode on a single plate, quiet zone kept</li>
+      <li>Size, resolution, colour mode, bleed and safe area</li>
+      <li>Final PDF compared against the last approved proof</li>
+    </ul>
+
+    <div class="contact">Khon Kaen, Thailand · open to relocating to Bangkok<br>+66 96 684 5125 · <a href="mailto:r.sarayut.w@gmail.com">r.sarayut.w@gmail.com</a></div>
+  </section>
+
+  <section class="sheet board">
+    <div class="no">01 / 04</div>
+    <h2>Colour separation</h2>
+    <p>Photo split into four plates; black type on K100 only; solid red kept to two inks for an even solid.</p>
+    <figure><img src="img/posters/poster-01.jpg" alt="Colour separation board: carton front with CMYK plates of the photo"></figure>
+    <a class="full" href="boards/poster-01.png">Open full size</a>
+  </section>
+
+  <section class="sheet board">
+    <div class="no">02 / 04</div>
+    <h2>K text overprint</h2>
+    <p>Small black type prints on top of colour, so a plate shift never leaves a white halo. Barcode on one plate only.</p>
+    <figure><img src="img/posters/poster-02.jpg" alt="K text overprint board: carton back with small Thai text, nutrition table and barcode"></figure>
+    <a class="full" href="boards/poster-02.png">Open full size</a>
+  </section>
+
+  <section class="sheet board">
+    <div class="no">03 / 04</div>
+    <h2>Half-line trapping</h2>
+    <p>Traps sit on the shared edge, half into each colour, so neither shape grows visibly.</p>
+    <figure><img src="img/posters/poster-03.jpg" alt="Half-line trapping board: lid front with trap call-outs"></figure>
+    <a class="full" href="boards/poster-03.png">Open full size</a>
+  </section>
+
+  <section class="sheet board">
+    <div class="no">04 / 04</div>
+    <h2>Plate check</h2>
+    <p>The lid prints in three inks only: C100, a spot brown and K100. Each is checked on its own plate; the date-code window stays clear.</p>
+    <figure><img src="img/posters/poster-04.jpg" alt="Plate check board: lid back with C100, spot brown and K100 plates"></figure>
+    <a class="full" href="boards/poster-04.png">Open full size</a>
+    <p class="note">Plate previews on the boards are simulated from product photos to explain each technique.</p>
+  </section>
+</main>
+</body>
+</html>
